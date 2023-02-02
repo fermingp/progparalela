@@ -1186,4 +1186,34 @@ To github.com:fermingp/progparalela.git
  rename procesos.py => 0_procesos.py (100%)
 ]0;fermingp@LAPTOP-D9NRVQMP: ~/progparalela[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~/progparalela[00m$ git push
 Enumerating objects: 3, done.
-Counting objects:  33% (1/3)Counting objects
+Counting objects:  33% (1/3)Counting objects:  66% (2/3)Counting objects: 100% (3/3)Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects:  50% (1/2)Compressing objects: 100% (2/2)Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)Writing objects: 100% (2/2)Writing objects: 100% (2/2), 233 bytes | 116.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:fermingp/progparalela.git
+   3cbf587..8ab6110  main -> main
+]0;fermingp@LAPTOP-D9NRVQMP: ~/progparalela[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~/progparalela[00m$ [K]0;fermingp@LAPTOP-D9NRVQMP: ~/progparalela[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~/progparalela[00m$ cd ..
+]0;fermingp@LAPTOP-D9NRVQMP: ~[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~[00m$ cp multiprocessing_01.txt progparalela/multiprocessing.txt
+]0;fermingp@LAPTOP-D9NRVQMP: ~[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~[00m$ git add multiprocessing_01.txt
+fatal: not a git repository (or any of the parent directories): .git
+]0;fermingp@LAPTOP-D9NRVQMP: ~[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~[00m$ cd progparalela
+]0;fermingp@LAPTOP-D9NRVQMP: ~/progparalela[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~/progparalela[00m$ cd progparalelagit add multiprocessing_01.txt
+fatal: pathspec 'multiprocessing_01.txt' did not match any files
+]0;fermingp@LAPTOP-D9NRVQMP: ~/progparalela[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~/progparalela[00m$ rm multiprocessing.txt 
+]0;fermingp@LAPTOP-D9NRVQMP: ~/progparalela[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~/progparalela[00m$ ls
+0_procesos.py  1_procesos.py  2_procesos.py  3_procesos.py  README.md
+]0;fermingp@LAPTOP-D9NRVQMP: ~/progparalela[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~/progparalela[00m$ cd ..
+]0;fermingp@LAPTOP-D9NRVQMP: ~[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~[00m$ cd ..[3Plsrm multiprocessing.txt git add multiprocessing_01.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pcd progparalelagit add multiprocessing_01.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp multiprocessing_01.txt progparalela/multiprocessing.txt_.txt0.txt1.txt
+]0;fermingp@LAPTOP-D9NRVQMP: ~[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~[00m$ cd progparalela
+]0;fermingp@LAPTOP-D9NRVQMP: ~/progparalela[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~/progparalela[00m$ ls
+0_procesos.py  1_procesos.py  2_procesos.py  3_procesos.py  README.md  multiprocessing_01.txt
+]0;fermingp@LAPTOP-D9NRVQMP: ~/progparalela[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~/progparalela[00m$ lscd progparalelap multiprocessing_01.txt progparalela/multiprocessing_01.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd ..[K[3Plsrm multiprocessing.txt git add multiprocessing_01.txt
+]0;fermingp@LAPTOP-D9NRVQMP: ~/progparalela[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~/progparalela[00m$ git commit -m "script segunda [K[K[K[K[K[K[K[Kcontinuacion[K[K[K[K[K[K[K[K[K[K[K[Ksegunda parte"
+[main 58f9376] script segunda parte
+ 1 file changed, 1189 insertions(+)
+ create mode 100644 multiprocessing_01.txt
+]0;fermingp@LAPTOP-D9NRVQMP: ~/progparalela[01;32mfermingp@LAPTOP-D9NRVQMP[00m:[01;34m~/progparalela[00m$ git push[K[K[K[K[K[K[K[Kexit
+
+Script done on 2023-02-02 18:34:36+01:00 [COMMAND_EXIT_CODE="0"]
