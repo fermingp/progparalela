@@ -1,0 +1,236 @@
+Script started on 2023-02-02 09:50:09+01:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+[?2004h]0;alumno@aula457: ~[01;32malumno@aula457[00m:[01;34m~[00m$ ^V[Kgit clone [7mgit@github.com:fermingp/progparalela.git[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit@github.com:fermingp/progparalela.git
+[?2004l
+Clonando en 'progparalela'...
+
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+
+git@github.com: Permission denied (publickey).
+
+fatal: No se pudo leer del repositorio remoto.
+
+Por favor asegúrate de que tengas los permisos de acceso correctos
+y que el repositorio exista.
+[?2004h]0;alumno@aula457: ~[01;32malumno@aula457[00m:[01;34m~[00m$ rm -r .ssh/
+[?2004l
+[?2004h]0;alumno@aula457: ~[01;32malumno@aula457[00m:[01;34m~[00m$ unzip Desa[Kcargad[Ks/ssh.zip
+[?2004l
+Archive:  Descargas/ssh.zip
+   creating: .ssh/
+  inflating: .ssh/id_rsa             
+  inflating: .ssh/id_rsa.pub         
+[?2004h]0;alumno@aula457: ~[01;32malumno@aula457[00m:[01;34m~[00m$ unzip Descargas/ssh.zip
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Prm -r .ssh/git clone git@github.com:fermingp/progparalela.git
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31Ppip install sklearngit clone git@github.com:fermingp/progparalela.git
+[?2004l
+Clonando en 'progparalela'...
+
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[K
+remote: Counting objects:  66% (2/3)[K
+remote: Counting objects: 100% (3/3)[K
+remote: Counting objects: 100% (3/3), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Recibiendo objetos:  33% (1/3)
+Recibiendo objetos:  66% (2/3)
+Recibiendo objetos: 100% (3/3)
+Recibiendo objetos: 100% (3/3), listo.
+[?2004h]0;alumno@aula457: ~[01;32malumno@aula457[00m:[01;34m~[00m$ git add [K[K[K[K[Ka[K add Rea[K[KEAD.md
+[?2004l
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+[?2004h]0;alumno@aula457: ~[01;32malumno@aula457[00m:[01;34m~[00m$ git add READ.mdMD.md[1PD.md[CM.mdE.md[C[C[C
+[?2004l
+fatal: no es un repositorio git (ni ninguno de los directorios superiores): .git
+[?2004h]0;alumno@aula457: ~[01;32malumno@aula457[00m:[01;34m~[00m$ ls
+[?2004l
+[0m[01;34mDescargas[0m            [01;34mPlantillas[0m                     Untitled1.ipynb
+[01;34mDocumentos[0m           [01;34mprogparalela[0m                   Untitled2.ipynb
+[01;34mEscritorio[0m           [01;34mPúblico[0m                        Untitled3.ipynb
+[01;34mImágenes[0m             [40;31;01mpyspark[0m                        Untitled4.ipynb
+[01;34mmodelizacion[0m         [01;34msnap[0m                           Untitled5.ipynb
+multiprocessing.txt  [01;31mspark-3.2.1-bin-hadoop3.2.tgz[0m  Untitled.ipynb
+[01;34mMúsica[0m               test.csv                       [01;34mvenv[0m
+os                   train.csv                      [01;34mVídeos[0m
+[?2004h]0;alumno@aula457: ~[01;32malumno@aula457[00m:[01;34m~[00m$ cd progf[Kparalela
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ cd progparalelals[Kgit add README.md
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git commit -m "Hecho"
+[?2004l
+Identidad del autor desconocido
+
+*** Por favor cuéntame quién eres.
+
+Ejecuta
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Tu Nombre"
+
+para configurar la identidad por defecto de tu cuenta.
+Omite --global para configurar tu identidad solo en este repositorio.
+
+fatal: no es posible auto-detectar la dirección de correo (se obtuvo 'alumno@aula457.(none)')
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git config --glol[Kbal user.email "davgon1[K21@ucm-es[K[K[K.es<[K"
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ ^C[?2004l
+[?2004h[?2004l
+
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ [7mgit@github.com:fermingp/progparalela.git[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pgit@github.com:fermingp/progparalela.gi[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit log
+[?2004l
+[?1h=
+[33mcommit 5b1bf7361057d066047d85c8d82a8f6d13711f06[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morig[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31m[m[33m[m[1;31min/HEAD[m[33m)[m[m
+Author: fermingp <124069712+fermingp@users.noreply.github.com>[m
+Date:   Tue Jan 31 16:30:20 2023 +0100[m
+[m
+    Initial commit[m
+
+[K[?1l>[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git config --global user.anme[K[K[K[Kname "David"
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git config --global user.name "David"log[K
+[?2004l
+[?1h=
+[33mcommit 5b1bf7361057d066047d85c8d82a8f6d13711f06[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morig[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31m[m[33m[m[1;31min/HEAD[m[33m)[m[m
+Author: fermingp <124069712+fermingp@users.noreply.github.com>[m
+Date:   Tue Jan 31 16:30:20 2023 +0100[m
+[m
+    Initial commit[m
+
+[K[?1l>[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git logconfig --global user.name "David"[1P"[1P"[1P"[1P"[1P"d"a"v"g"o"n"2"1"[C
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git config --global user.name "davgon21"log[K
+[?2004l
+[?1h=
+[33mcommit 5b1bf7361057d066047d85c8d82a8f6d13711f06[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morig[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31m[m[33m[m[1;31min/HEAD[m[33m)[m[m
+Author: fermingp <124069712+fermingp@users.noreply.github.com>[m
+Date:   Tue Jan 31 16:30:20 2023 +0100[m
+[m
+    Initial commit[m
+
+[K[?1l>[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ gi[Kit commit -m "Hecho"
+[?2004l
+En la rama main
+Tu rama está actualizada con 'origin/main'.
+
+nada para hacer commit, el árbol de trabajo está limpio
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git commit -m "Hecho"log[Kconfig --global user.name "davgon21"log[Kconfig --global user.name "David"log[Kconfig --global user.email "davgon21@ucm.es"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"f"w"e"[1P"[1P"e"r"m"i"n"[1P"[1P"[1P"[1P"[1P"m"[1P"e"r"m"i"n"[1P"[1P"g"o"n"z"x"[1P"@"u"c"m"."e"s"[C
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git config --global user.email "fermgonz@ucm.es"
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Pmmit -m "Hecho"log[Kconfig --global user.name "davgon21"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"F"[1P"f"e"r"m"i"n"g"p"[C
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git config --global user.name "fermingp"email "fermgonz@ucm.es"
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Pmmit -m "Hecho"
+[?2004l
+En la rama main
+Tu rama está actualizada con 'origin/main'.
+
+nada para hacer commit, el árbol de trabajo está limpio
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ co[K[Khea[K[K[Kgedit README.md 
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git add README.md 
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git commi[K[K[K[K[K[K[K[K[K
+(reverse-i-search)`': [Kc': git commit -m "He[7mc[27mho"o': git [7mco[27mmmit -m "Hecho"[1@m': git [7mcom[27m
+]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git commit -m "Hecho"
+[?2004l
+[main f479bbd] Hecho
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ 
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git commit -m "Hecho"[3Padd README.md [2Pedit[C[C[C[C[C[C[C[C[C[C[Cit commit -m "Hecho"[5Pedit README.md [2@it add[C[C[C[C[C[C[C[C[C[C[Ccommit -m "Hecho"[3Padd README.md [2Pedit[C[C[C[C[C[C[C[C[C[C[Cit commit -m "Hecho"nfig --global user.name "fermingp"email "fermgonz@ucm.es"
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[27Pmmit -m "Hecho"nfig --global user.email "fermgonz@ucm.es"[8Pname "fermingp"[19Pmmit -m "Hecho"[5Pedit README.md [2@it add[C[C[C[C[C[C[C[C[C[C[C[2Pedit[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K procesos.py
+[?2004l
+
+^[[A^[[A        
+gg
+^C
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ gedit procesos.pyit commit -m "Hecho"[3Padd README.md [2Pedit[C[C[C[C[C[C[C[C[C[C[C[2@it add[C[C[C[C[C[C[C[C[C[C[C[C[1P [1P [1P [1P [1P [1P [1P [1P [1P p r o c e s o s . p y 
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git add procesos.py [3Pedit procesos.pyit commit -m "Hecho"[1P"[1P"[1P"[1P"[1P"0"[1P"c"r"e"a"c"i"[1P"[1P"[1P"[1P"[1P"[1P"0"_"p"t"r"o"[1P"[1P"[1P"r"o"c"e"s"o"s"H"e"c"h"o"s"[C
+[?2004l
+[main b764c32] 0_procesosHechos
+ 1 file changed, 18 insertions(+)
+ create mode 100644 procesos.py
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git push 
+[?2004l
+Enumerando objetos: 8, listo.
+Contando objetos:  12% (1/8)
+Contando objetos:  25% (2/8)
+Contando objetos:  37% (3/8)
+Contando objetos:  50% (4/8)
+Contando objetos:  62% (5/8)
+Contando objetos:  75% (6/8)
+Contando objetos:  87% (7/8)
+Contando objetos: 100% (8/8)
+Contando objetos: 100% (8/8), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos:  25% (1/4)
+Comprimiendo objetos:  50% (2/4)
+Comprimiendo objetos:  75% (3/4)
+Comprimiendo objetos: 100% (4/4)
+Comprimiendo objetos: 100% (4/4), listo.
+Escribiendo objetos:  16% (1/6)
+Escribiendo objetos:  33% (2/6)
+Escribiendo objetos:  50% (3/6)
+Escribiendo objetos:  66% (4/6)
+Escribiendo objetos:  83% (5/6)
+Escribiendo objetos: 100% (6/6)
+Escribiendo objetos: 100% (6/6), 720 bytes | 720.00 KiB/s, listo.
+Total 6 (delta 0), reusados 0 (delta 0), pack-reusados 0
+To github.com:fermingp/progparalela.git
+   5b1bf73..b764c32  main -> main
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ gedit 1_porcesos[K[K[K[K[K[K[Krocesos.py
+[K]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ gedit 1_procesos.py
+[K]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ gedit 1_procesos.py
+[?2004l
+C ^C
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ gedit 1_procesos.py[10Pit push commit -m "0_procesosHechos"[12Padd procesos.py [1@1[C[C[C[C[C[C[C[C[C[C[C
+[K]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git add 1procesos.py 
+[K]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git add 1procesos.py [1@_[1P[C[1@_[C[C[C[C[C[C[C[C[C[C[C
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git add 1_procesos.py [3Pedit 1_procesos.py[10Pit push commit -m "0_procesosHechos"[1P_procesosHechos"1_procesosHechos"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l
+[main 25585da] 1_procesosHechos
+ 1 file changed, 21 insertions(+)
+ create mode 100644 1_procesos.py
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git commit -m "1_procesosHechos"[10Padd 1_procesos.py [3Pedit 1_procesos.py[10Pit push 
+[?2004l
+Enumerando objetos: 4, listo.
+Contando objetos:  25% (1/4)
+Contando objetos:  50% (2/4)
+Contando objetos:  75% (3/4)
+Contando objetos: 100% (4/4)
+Contando objetos: 100% (4/4), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos:  33% (1/3)
+Comprimiendo objetos:  66% (2/3)
+Comprimiendo objetos: 100% (3/3)
+Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos:  33% (1/3)
+Escribiendo objetos:  66% (2/3)
+Escribiendo objetos: 100% (3/3)
+Escribiendo objetos: 100% (3/3), 583 bytes | 583.00 KiB/s, listo.
+Total 3 (delta 0), reusados 0 (delta 0), pack-reusados 0
+To github.com:fermingp/progparalela.git
+   b764c32..25585da  main -> main
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ git push commit -m "1_procesosHechos"[10Padd 1_procesos.py [3Pedit 1_procesos.py[10Pit push edit 1_procesos.py[C[1P_procesos.py2_procesos.py[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l
+^C
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ rm[K[Kgit mv 1_procesos.py 3_procesos.py
+[?2004l
+[?2004h]0;alumno@aula457: ~/progparalela[01;32malumno@aula457[00m:[01;34m~/progparalela[00m$ rm[K[K[?2004l
+
+exit
+
+Script done on 2023-02-02 10:49:34+01:00 [COMMAND_EXIT_CODE="0"]
