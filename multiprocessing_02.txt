@@ -1,0 +1,365 @@
+Script started on 2023-02-02 19:27:43+01:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="24"]
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ rm Descargas/multiprocessing_02.txt[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ [C[C[CCarpeta Personal/multiprocessing_02.txt[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ [1Pscript multiprocessing_02.txt
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cman git[K[1@help[C[C[C[Cscript multiprocessing.txt[13Pll Documentos[5@s -alh[C[C[C[C[C[C[C[C[C[C[Cdocumentosh[Klhalh documentosDocumentos[5Pl[C[C[C[C[C[C[C[C[C[C[Cscript multiprocessing.txthelp git[K[1Pman[C[C[C[Cscript multiprocessing_02.txtrm Carpeta Personal/multiprocessing_02.txt[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ [C[C[CDescargas/multiprocessing_02[7P.txt[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ [K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone [7mfrom multiprocessing[27m[7m [27m[7mimport Process\00[27m
+
+[7mfrom multiprocessing import current_process[27m
+
+[7mfrom multiprocessing import Value[27m
+
+[7mimport time[27m
+
+[7mdef f(c):[27m
+
+[7mfor i in range(100):[27m
+
+[7mtemp = c.value + 1[27m
+
+[7mprint (f"hola soy {current_process().pid}, vuelta: {i}, contador: {c.value}")[27m
+
+[7mtime.sleep(0.1)[27m
+
+[7mc.value = temp[27m
+
+[7mif __name__ == "__main__":[27m
+
+[7mN = 8[27m
+
+[7mlp = [][27m
+
+[7mc = Value(’i’, 0)[27m
+
+[7mfor i in range(N):[27m
+
+[7mlp.append(Process(target=f, args=(c,)))[27m
+
+[7mprint ("Valor inicial del contador", c.value)[27m
+
+[7mfor p in lp:[27m
+
+[7mp.start()[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[Cfrom multiprocessing import Process
+
+from multiprocessing import current_process
+
+from multiprocessing import Value
+
+import time
+
+def f(c):
+
+for i in range(100):
+
+temp = c.value + 1
+
+print (f"hola soy {current_process().pid}, vuelta: {i}, contador: {c.value}")
+
+time.sleep(0.1)
+
+c.value = temp
+
+if __name__ == "__main__":
+
+N = 8
+
+lp = []
+
+c = Value(’i’, 0)
+
+for i in range(N):
+
+lp.append(Process(target=f, args=(c,)))
+
+print ("Valor inicial del contador", c.value)
+
+for p in lp:
+
+[1Pp.start([K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K^[[200~git@github.com:fermingp/progparalela.git~[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kne [7mgit@github.com:fermi[27m[7mn[27m[7mgp/progparalela.git[27m[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[Cgit@github.com:fermingp/progparalela.git
+[?2004l
+Clonando en 'progparalela'...
+remote: Enumerating objects: 31, done.[K
+remote: Counting objects:   3% (1/31)[K
+remote: Counting objects:   6% (2/31)[K
+remote: Counting objects:   9% (3/31)[K
+remote: Counting objects:  12% (4/31)[K
+remote: Counting objects:  16% (5/31)[K
+remote: Counting objects:  19% (6/31)[K
+remote: Counting objects:  22% (7/31)[K
+remote: Counting objects:  25% (8/31)[K
+remote: Counting objects:  29% (9/31)[K
+remote: Counting objects:  32% (10/31)[K
+remote: Counting objects:  35% (11/31)[K
+remote: Counting objects:  38% (12/31)[K
+remote: Counting objects:  41% (13/31)[K
+remote: Counting objects:  45% (14/31)[K
+remote: Counting objects:  48% (15/31)[K
+remote: Counting objects:  51% (16/31)[K
+remote: Counting objects:  54% (17/31)[K
+remote: Counting objects:  58% (18/31)[K
+remote: Counting objects:  61% (19/31)[K
+remote: Counting objects:  64% (20/31)[K
+remote: Counting objects:  67% (21/31)[K
+remote: Counting objects:  70% (22/31)[K
+remote: Counting objects:  74% (23/31)[K
+remote: Counting objects:  77% (24/31)[K
+remote: Counting objects:  80% (25/31)[K
+remote: Counting objects:  83% (26/31)[K
+remote: Counting objects:  87% (27/31)[K
+remote: Counting objects:  90% (28/31)[K
+remote: Counting objects:  93% (29/31)[K
+remote: Counting objects:  96% (30/31)[K
+remote: Counting objects: 100% (31/31)[K
+remote: Counting objects: 100% (31/31), done.[K
+remote: Compressing objects:   4% (1/21)[K
+remote: Compressing objects:   9% (2/21)[K
+remote: Compressing objects:  14% (3/21)[K
+remote: Compressing objects:  19% (4/21)[K
+remote: Compressing objects:  23% (5/21)[K
+remote: Compressing objects:  28% (6/21)[K
+remote: Compressing objects:  33% (7/21)[K
+remote: Compressing objects:  38% (8/21)[K
+remote: Compressing objects:  42% (9/21)[K
+remote: Compressing objects:  47% (10/21)[K
+remote: Compressing objects:  52% (11/21)[K
+remote: Compressing objects:  57% (12/21)[K
+remote: Compressing objects:  61% (13/21)[K
+remote: Compressing objects:  66% (14/21)[K
+remote: Compressing objects:  71% (15/21)[K
+remote: Compressing objects:  76% (16/21)[K
+remote: Compressing objects:  80% (17/21)[K
+remote: Compressing objects:  85% (18/21)[K
+remote: Compressing objects:  90% (19/21)[K
+remote: Compressing objects:  95% (20/21)[K
+remote: Compressing objects: 100% (21/21)[K
+remote: Compressing objects: 100% (21/21), done.[K
+Recibiendo objetos:   3% (1/31)
+Recibiendo objetos:   6% (2/31)
+Recibiendo objetos:   9% (3/31)
+Recibiendo objetos:  12% (4/31)
+Recibiendo objetos:  16% (5/31)
+Recibiendo objetos:  19% (6/31)
+Recibiendo objetos:  22% (7/31)
+Recibiendo objetos:  25% (8/31)
+Recibiendo objetos:  29% (9/31)
+Recibiendo objetos:  32% (10/31)
+Recibiendo objetos:  35% (11/31)
+Recibiendo objetos:  38% (12/31)
+Recibiendo objetos:  41% (13/31)
+Recibiendo objetos:  45% (14/31)
+Recibiendo objetos:  48% (15/31)
+Recibiendo objetos:  51% (16/31)
+Recibiendo objetos:  54% (17/31)
+Recibiendo objetos:  58% (18/31)
+remote: Total 31 (delta 8), reused 25 (delta 5), pack-reused 0[K
+Recibiendo objetos:  61% (19/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos:  64% (20/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos:  67% (21/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos:  70% (22/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos:  74% (23/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos:  77% (24/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos:  80% (25/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos:  83% (26/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos:  87% (27/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos:  90% (28/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos:  93% (29/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos:  96% (30/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos: 100% (31/31), 28.00 KiB | 26.00 KiB/s
+Recibiendo objetos: 100% (31/31), 43.18 KiB | 55.00 KiB/s, listo.
+Resolviendo deltas:   0% (0/8)
+Resolviendo deltas:  12% (1/8)
+Resolviendo deltas:  25% (2/8)
+Resolviendo deltas:  37% (3/8)
+Resolviendo deltas:  50% (4/8)
+Resolviendo deltas:  62% (5/8)
+Resolviendo deltas:  75% (6/8)
+Resolviendo deltas:  87% (7/8)
+Resolviendo deltas: 100% (8/8)
+Resolviendo deltas: 100% (8/8), listo.
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~[00m$ cd progparalela
+[?2004l
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ gedit 4_prc[Kocesos. 
+py
+[?2004l
+^C
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ git add 4_procesos.py 
+[?2004l
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ git comm9t[K[Kit -m "pr 
+ocesps[K[K[K[K[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr 
+ocesos4hecho[C[C[C[C[C[K[K[K[K[K
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CHprocesos4[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceprocesos4
+cprocesos4
+[Chprocesos4
+[C[Coprocesos4
+[C[C[C[C[C[C[C[C[C[C[C[C"
+[?2004l
+Identidad del autor desconocido
+
+*** Por favor cuéntame quién eres.
+
+Ejecuta
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Tu Nombre"
+
+para configurar la identidad por defecto de tu cuenta.
+Omite --global para configurar tu identidad solo en este repositorio.
+
+fatal: no es posible auto-detectar la dirección de correo (se obtuvo 'david@david-VivoBook-ASUSLaptop-X531FAC-S531FA.(none)')
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ da[K[Kgi [Kt config --glob 
+al uswr [K[K[Ker.email "davgon321[K[K[K21@ucm.es"
+[?2004l
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ git config --global user.email "davgon21@ucm.es"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kuseee[K[K[Ker.name ·davgon21[1Pdavgon21"davgon21[C[C[C[C[C[C[C[C"
+[?2004l
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ git config --global user.name "davgon21"
+[C[C[C[C[C[C[C[Cemail "davgon21@ucm.es"[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ [C[C[C[C[C[Cmmit -m "Hec[18Phoprocesos4"[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ [C[C[C[Cadd 4_procesos[8P.py [A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ [C[C[C[Ccommit -m "Hechoprocesos4"
+[?2004l
+[main 4870903] Hechoprocesos4
+ 1 file changed, 27 insertions(+)
+ create mode 100644 4_procesos.py
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ gi[Kit push
+[?2004l
+Enumerando objetos: 4, listo.
+Contando objetos:  25% (1/4)
+Contando objetos:  50% (2/4)
+Contando objetos:  75% (3/4)
+Contando objetos: 100% (4/4)
+Contando objetos: 100% (4/4), listo.
+Compresión delta usando hasta 8 hilos
+Comprimiendo objetos:  33% (1/3)
+Comprimiendo objetos:  66% (2/3)
+Comprimiendo objetos: 100% (3/3)
+Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos:  33% (1/3)
+Escribiendo objetos:  66% (2/3)
+Escribiendo objetos: 100% (3/3)
+Escribiendo objetos: 100% (3/3), 563 bytes | 563.00 KiB/s, listo.
+Total 3 (delta 1), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas:   0% (0/1)[K
+remote: Resolving deltas: 100% (1/1)[K
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:fermingp/progparalela.git
+   12f62a1..4870903  main -> main
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ gedit 5_process[Kos. 
+py
+[?2004l
+^[[D^[[D        ^C
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ git [K[K[K[Kgit add mukt[K[K[Kultiproc 
+essing.[K_[C02.txt
+[?2004l
+fatal: ruta especificada 'multiprocessing_02.txt' no concordó con ningún archivo
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ mv [K[K[Kgit v[Kmv mukti[K[K[Kltipor[K[Kroce 
+ssing:[K_02.txt prog[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit add multiprocessing_02.txt
+[?2004l
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ git commit -m "sc 
+ripy[Kt tercerta[K[Ka parte"
+[?2004l
+[main 00fb9ba] script tercera parte
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 multiprocessing_02.txt
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ git psg[K[Kush
+[?2004l
+Enumerando objetos: 4, listo.
+Contando objetos:  25% (1/4)
+Contando objetos:  50% (2/4)
+Contando objetos:  75% (3/4)
+Contando objetos: 100% (4/4)
+Contando objetos: 100% (4/4), listo.
+Compresión delta usando hasta 8 hilos
+Comprimiendo objetos:  33% (1/3)
+Comprimiendo objetos:  66% (2/3)
+Comprimiendo objetos: 100% (3/3)
+Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos:  33% (1/3)
+Escribiendo objetos:  66% (2/3)
+Escribiendo objetos: 100% (3/3)
+Escribiendo objetos: 100% (3/3), 2.43 KiB | 2.43 MiB/s, listo.
+Total 3 (delta 1), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas:   0% (0/1)[K
+remote: Resolving deltas: 100% (1/1)[K
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:fermingp/progparalela.git
+   4870903..00fb9ba  main -> main
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ git pushcommit -m "script tercera parte"[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ [C[C[C[Cadd multiproce[6Pssing_02.txt[1P.txt[1P.txt[1P.txt[C[C[C[C
+[?2004l
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ git add multiprocessing.txt[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ [C[C[C[Cpush[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "script tercera parte"[1P parte"[1P parte"[1P parte"[1P parte"[1P parte"[1P parte"[1P parte"
+[C[C[C[C[Cp parte"r parte"i parte"m parte"e parte"r parte"a parte"[C[C[C[C[C[C[C
+[?2004l
+[main f9552c4] script primera parte
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 multiprocessing.txt
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ git commit -m "script primera parte"[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ [C[C[C[Cadd multiproce[9Pssing.txt[A
+]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ [C[C[C[Cpush[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l
+Enumerando objetos: 4, listo.
+Contando objetos:  25% (1/4)
+Contando objetos:  50% (2/4)
+Contando objetos:  75% (3/4)
+Contando objetos: 100% (4/4)
+Contando objetos: 100% (4/4), listo.
+Compresión delta usando hasta 8 hilos
+Comprimiendo objetos:  50% (1/2)
+Comprimiendo objetos: 100% (2/2)
+Comprimiendo objetos: 100% (2/2), listo.
+Escribiendo objetos:  33% (1/3)
+Escribiendo objetos:  66% (2/3)
+Escribiendo objetos: 100% (3/3)
+Escribiendo objetos: 100% (3/3), 261 bytes | 261.00 KiB/s, listo.
+Total 3 (delta 1), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas:   0% (0/1)[K
+remote: Resolving deltas: 100% (1/1)[K
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To github.com:fermingp/progparalela.git
+   00fb9ba..f9552c4  main -> main
+[?2004h]0;david@david-VivoBook-ASUSLaptop-X531FAC-S531FA: ~/progparalela[01;32mdavid@david-VivoBook-ASUSLaptop-X531FAC-S531FA[00m:[01;34m~/progparalela[00m$ [?2004l
+
+exit
+
+Script done on 2023-02-03 11:18:20+01:00 [COMMAND_EXIT_CODE="0"]
