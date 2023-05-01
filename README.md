@@ -1,4 +1,2 @@
 # progparalela
-hola
-segunda modificacion
-
+Programas de iniciación a la programación concurrente.
